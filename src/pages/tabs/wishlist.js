@@ -9,7 +9,6 @@ import MovieCard from "./movieCard";
 
 const Wishlist = ({ wishlist }) => {
 
-
   return (
     <>
       <h2 className="main__category nowPlayingText">Wishlist</h2>
