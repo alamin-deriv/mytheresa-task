@@ -34,8 +34,8 @@ const Movie = () => {
          dispatch(fetchmovieByIDStart(id));
        }, [id]);
 
-console.log(currentMovie); 
-
+ 
+// function to add commas to long digit
 const  numberWithCommas = (x) => {
   return x ? x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : "";
 }

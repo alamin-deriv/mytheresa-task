@@ -2,19 +2,20 @@ import React from "react";
 import {
   selectWatchlist
 } from "../../redux/movies/selectors";
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
 import EmptyState from "../../components/EmptyState/";
 import MovieCard from "./movieCard";
+import { useSelector } from "react-redux";
 
-const Wishlist = ({ wishlist }) => {
+const Wishlist = () => {
+
+  const wishlist = useSelector(selectWatchlist)
 
   return (
     <>
       <h2 className="main__category nowPlayingText">Wishlist</h2>
-      {wishlist.length ? (
+      {wishlist?.length ? (
         <div className="wishlist">
-          {wishlist.map((movie) => (
+          {wishlist?.map((movie) => (
             <MovieCard
               key={movie.id}
               category={movie.category}
@@ -33,10 +34,6 @@ const Wishlist = ({ wishlist }) => {
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  wishlist: selectWatchlist,
-});
 
 
-
-export default connect(mapStateToProps, null)(Wishlist);
+export default Wishlist;

@@ -1,6 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
 import {
   selectListOfNowPlayingMovies,
   selectListOfPopularMovies,
@@ -9,6 +7,7 @@ import {
 } from "../../redux/movies/selectors";
 import Carousel from "react-elastic-carousel";
 import MovieCard from "./movieCard";
+import { useSelector } from "react-redux";
 
 
 const breakPoints = [
@@ -18,14 +17,15 @@ const breakPoints = [
   { width: 1200, itemsToShow: 4 },
 ];
 
-const Movies = ({
-  listOfNowPlayingMovies,
-  listOfPopularMovies,
-  listOfTopRatedMovies,
-  listOfGenres,
-}) => {
+const Movies = () => {
+
+   const listOfNowPlayingMovies = useSelector(selectListOfNowPlayingMovies);
+   const listOfPopularMovies = useSelector(selectListOfPopularMovies);
+   const listOfTopRatedMovies = useSelector(selectListOfTopRatedMovies);
+   const listOfGenres = useSelector(selectListOfGenres);
 
 
+// this function find movie genres since initial they only came in ids
   const getMovieGenre = (genreIds) => {
     const genres = listOfGenres.filter((d) => {
       return genreIds.find((i) => i === d.id);
@@ -85,16 +85,9 @@ const Movies = ({
       </Carousel>
     </div>
   );
-};
-
-
-const mapStateToProps = createStructuredSelector({
-  listOfNowPlayingMovies: selectListOfNowPlayingMovies,
-  listOfPopularMovies: selectListOfPopularMovies,
-  listOfTopRatedMovies: selectListOfTopRatedMovies,
-  listOfGenres: selectListOfGenres,
-});
+}; 
 
 
 
-export default connect(mapStateToProps, null)(Movies);
+
+export default Movies;

@@ -45,10 +45,11 @@ const Home = ({
     },
   ];
 
+
   return (
     <>
       {loading ? (
-        <Loader />
+        <Loader data-testid="loader" />
       ) : (
         <div className="main">
           <Tabs type="tabs" tabs={tabs} />

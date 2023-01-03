@@ -1,42 +1,39 @@
 export const listOfNowPlayingMovies = [
-    {
-        "adult": false,
-        "backdrop_path": "/tQ91wWQJ2WRNDXwxuO7GCXX5VPC.jpg",
-        "genre_ids": [
-            878,
-            28,
-            12
-        ],
-        "id": 76600,
-        "original_language": "en",
-        "original_title": "Avatar: The Way of Water",
-        "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
-        "popularity": 4334.092,
-        "poster_path": "/94xxm5701CzOdJdUEdIuwqZaowx.jpg",
-        "release_date": "2022-12-14",
-        "title": "Avatar: The Way of Water",
-        "video": false,
-        "vote_average": 8.1,
-        "vote_count": 897
-    }
-]
+  {
+    adult: false,
+    backdrop_path: "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg",
+    genre_ids: [28, 14, 878],
+    id: 436270,
+    original_language: "en",
+    original_title: "Black Adam",
+    overview:
+      "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+    popularity: 3794.099,
+    poster_path: "/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
+    release_date: "2022-10-19",
+    title: "Black Adam",
+    video: false,
+    vote_average: 7.2,
+    vote_count: 3443,
+  },
+];
 export const listOfPopularMovies = [
   {
     adult: false,
-    backdrop_path: "/tQ91wWQJ2WRNDXwxuO7GCXX5VPC.jpg",
-    genre_ids: [878, 28, 12],
-    id: 76600,
+    backdrop_path: "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+    genre_ids: [18, 80],
+    id: 238,
     original_language: "en",
-    original_title: "Avatar: The Way of Water",
+    original_title: "The Godfather",
     overview:
-      "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
-    popularity: 4334.092,
-    poster_path: "/94xxm5701CzOdJdUEdIuwqZaowx.jpg",
-    release_date: "2022-12-14",
-    title: "Avatar: The Way of Water",
+      "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    popularity: 117.391,
+    poster_path: "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    release_date: "1972-03-14",
+    title: "The Godfather",
     video: false,
-    vote_average: 8.1,
-    vote_count: 897,
+    vote_average: 8.7,
+    vote_count: 17189,
   },
 ];
 
