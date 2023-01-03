@@ -91,7 +91,7 @@ describe("Movie", () => {
             vote_average: 7.5,
             vote_count: 10000,
             poster_path: "/poster.jpg",
-            category: "nowPlaying",
+            category: undefined,
           },
         })
       );
